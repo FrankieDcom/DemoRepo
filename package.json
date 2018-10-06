@@ -3,6 +3,17 @@
     "name": "startbootstrap-freelancer",
     "version": "5.0.0",
     "description": "A freelancer portfolio HTML theme for Bootstrap.",
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": [
+            "eslint",
+            "git add"
+        ]
+    },
     "keywords": [
         "css",
         "sass",
